@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "babel-node src/main.js",
-    "start": "nodemon --exec babel-node src/server.js",
+    "start": "nodemon --exec babel-node src/server.js PORT=3000",
     "build": "babel src --out-dir dist",
     "serve": "node dist/server.js"
   },

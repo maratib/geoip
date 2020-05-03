@@ -4,8 +4,8 @@ var url = require('url');
 // import Circle from './Circle';
 import GeoipService from './GeoipService';
 
-const hostname = '192.168.10.156';
-const port = 5050;
+const hostname = process.env.IP || '127.0.0.1';
+const port = process.env.PORT || 5050;
 const geo = new GeoipService();
 
 // Lets define the server
